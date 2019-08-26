@@ -13,8 +13,8 @@ def AES_decrypt(key, message):
 	return pt
 
 if __name__=="__main__":
-	key = raw_input("enter the key :")
-	ct = raw_input("enter the string :")
+	key = input("enter the key :")
+	ct = input("enter the string :")
 	ct = ct.decode('hex')
 	pt = AES_decrypt(key,ct)
-	print pt
+	print(pt)
