@@ -1,0 +1,18 @@
+#please run this code on python version 2 :)
+#v3n0m 
+import random
+
+def decrypt():
+	ct=raw_input("Enter the string here:")
+	ct=ct.decode('hex')
+	pt = ""
+	for i in range(3,13):
+		turns = i
+		print "#"+str(turns)
+		for i in range(turns):
+			for j in range(0,len(ct)-i,turns):
+				pt+=ct[i+j]
+		
+		if "inctfj" in pt:
+			print pt
+decrypt()
