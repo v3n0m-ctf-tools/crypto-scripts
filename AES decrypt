@@ -1,4 +1,4 @@
-#please run the script in python version 2 :)
+#please run the script in python version 3 :)
 #v3n0m
 from Crypto.Cipher import AES
 
